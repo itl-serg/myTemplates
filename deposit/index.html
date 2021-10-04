@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Deposit</title>
+</head>
+
+<body>
+    <h1>
+        Расчет выплаты по вкладам:
+    </h1>
+
+
+    <form class="deposit" action="#">
+        <div class="total">
+            <label for="percent">Введите процентную ставку:</label>
+            <input id="percent" type="number" value="2">
+            <p>%</p>
+        </div>
+
+        <div>
+            <label for="depositAmount">Введите сумму вклада:</label>
+            <input id="depositAmount" type="number" value="">
+        </div>
+
+        <div>
+            <lebel for="months">Введите срок вклада (мес):</lebel>
+            <input id="months" type="number" value="">
+        </div>
+
+        <div>
+            <label for="prolongation-interest-payment">Пролонгация процентной выплаты (вкл/выкл):</label>
+            <input id="prolongation-interest-payment" type="checkbox" checked>
+            <button>Расчитать</button>
+        </div>
+
+        <div class="total">
+            <p>Сумма выплаты:</p>
+            <div class="total-amount">
+            </div>
+            <p>$</p>
+        </div>
+        <div class="total">
+            <p>Процент составил:</p>
+            <div class="total-percent">
+            </div>
+            <p>$</p>
+        </div>
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
