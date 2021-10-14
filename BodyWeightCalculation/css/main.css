@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 18px/26px "Roboto", sans-serif;
+  color: black;
+  text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  font: 700 18px/26px "Roboto", sans-serif;
+  border-radius: 5px;
+  width: 112px;
+  height: 40px;
+  text-align: center;
+}
+button {
+  margin: 10px;
+  width: 112px;
+  height: 40px;
+  font: 700 18px/26px "Roboto", sans-serif;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+section {
+  width: auto;
+  height: 100vh;
+  margin: 20px;
+  padding: 20px;
+  background: #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 20px auto 40px;
+}
+form {
+  border: 2px solid #000;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  max-width: 260px;
+  min-height: 320px;
+}
+.calculation-note {
+  font-size: 10px;
+  padding-top: 10px;
+}
+.calculate-bmi {
+  margin-top: 10px;
+  border-top: 2px solid #000;
+}
+.result-bmi,
+.correspondence-bmi {
+  margin: 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+.calculation-note ul {
+  font-size: 18px;
+}
+.calculation-note ul span.green-bmi {
+  color: green;
+}
+.calculation-note ul span.red-bmi {
+  color: red;
+}
+.calculation-note ul span.orange-bmi {
+  color: orange;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BodyWeightCalculation</title>
+</head>
+
+<body>
+    <section>
+        <h1>ИНДЕКС МАССЫ ТЕЛА</h1>
+        <form action="#">
+
+            <!-- Данное поля не работает из-за отсутствия данных ИМТ для мужчин и женщин, их возраста -->
+
+            <!-- <div class="gender-selection">
+                <label for="gender-female">Женщина:</label>
+                <input type="radio" name="plan" id="gender-female" checked>
+                <label for="gender-male">Мужчина:</label>
+                <input type="radio" name="plan" id="gender-male">
+            </div>
+            <div class="enter-age">
+                <label for="gender-age">Введите возраст</label>
+                <input type="number" id="gender-age" value="0" maxlength="2" oninput="maxLengthCheck(this)">
+
+            </div> -->
+
+            <div class="growth-input">
+                <label for="patient-height">Введите рост, см :</label>
+                <input type="number" id="patient-height" maxlength="3" oninput="maxLengthCheck(this)">
+            </div>
+            <div class="body-weight-input">
+                <label for="patient-weight">Введите вес, кг:</label>
+                <input type="number" id="patient-weight" maxlength="3" oninput="maxLengthCheck(this)">
+            </div>
+            <div class="calculate-bmi">
+                <button>Рассчитать</button>
+            </div>
+            <div class="correspondence-result-bmi">
+                <p class="result-bmi"></p>
+                <p class="correspondence-bmi"></p>
+            </div>
+        </form>
+        <div class="calculation-note">
+            <p>* Следует учесть, что, индекс Кетле не подходит для оценки массы тела людей с
+                развитой мускулатурой
+                (спортсменов,
+                культуристов и т.д.), и людей моложе 20 лет или старше 65 лет, беременных и кормящих женщин.</p>
+            <ul>
+                <li><span class="red-bmi">Выраженный дефицит массы тела</span> - менее 16,49"</li>
+                <li><span class="orange-bmi">Дефицит массы тела</span> - от 16,5 до 18,49</li>
+                <li><span class="green-bmi ">Нормальная масса тела</span>- от 18,5 до 24,99</li>
+                <li><span class="orange-bmi">Избыточная масса тела</span> - от 25 до 29,99</li>
+                <li><span class="red-bmi">Ожирение I степени</span> - от 30 до 34,99</li>
+                <li><span class="red-bmi">Ожирение II степени</span> - от 35 до 39,99</li>
+                <li><span class="red-bmi">Ожирение III степени</span> - от 40 и более</li>
+            </ul>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </section>
+</body>
+
+</html>
